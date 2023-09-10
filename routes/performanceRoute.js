@@ -27,8 +27,8 @@ router.get("/", (req, res) => {
   res.json({message: "All events performance data", data: records});
 });
 
- // Reset the performance records 
-router.delete("/reset", (req, res) => {
+ // Delete all the performance records 
+router.delete("/delete-all", (req, res) => {
   const initialRecords = {
     running: [],
     cycling: [],
